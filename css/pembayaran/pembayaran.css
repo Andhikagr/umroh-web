@@ -1,0 +1,78 @@
+.pembayaran__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.4rem;
+  flex: 1;
+}
+
+.pembayaran__container h3 {
+  color: var(--secondary--color);
+}
+
+.pembayaran__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.pembayaran__container .pembayaran__box {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  align-items: start;
+  justify-content: start;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 8px;
+  transition: transform 0.5s ease;
+  padding: 2rem;
+  position: relative;
+  background-color: var(--bg);
+}
+.pembayaran__container .pembayaran__box:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+.detail__bayar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--primary--color);
+  color: var(--bg);
+  padding: 0.3rem 1rem;
+  border-radius: 8px;
+}
+.pembayaran__box h6 {
+  text-align: justify;
+}
+
+.contoh {
+  font-weight: 600;
+}
+
+.cs {
+  display: flex;
+  gap: 0.3rem;
+  align-items: flex-end;
+  font-weight: 500;
+}
+.cs i {
+  background-color: green;
+  color: var(--bg);
+  padding: 0.3rem;
+  border-radius: 8px;
+}
+
+/* mediaqueries */
+@media (max-width: 992px) {
+  .pembayaran__container {
+    padding: 8rem 0 2rem;
+  }
+  .pembayaran__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.4rem;
+  }
+}

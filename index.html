@@ -18,10 +18,20 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
     </style>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/index/hero.css" />
+    <link rel="stylesheet" href="css/index/paket.css" />
+    <link rel="stylesheet" href="css/index/reason.css" />
+    <link rel="stylesheet" href="css/index/about.css" />
+    <link rel="stylesheet" href="css/index/testimoni.css" />
+    <link rel="stylesheet" href="css/index/artikel.css" />
+    <link rel="stylesheet" href="css/index/permit.css" />
     <title>Askadigi Tour</title>
   </head>
   <body>
+    <!-- header start -->
     <header>
       <nav class="navbar__container">
         <div class="nav__logo">
@@ -50,7 +60,7 @@
             <li><a href="#beranda">Beranda</a></li>
             <li class="dropdown__item">
               <div class="nav__item">
-                <a href="#jadwal"
+                <a href="jadwal.html"
                   >Jadwal Umroh<span class="material-symbols-outlined">
                     keyboard_arrow_down
                   </span></a
@@ -78,10 +88,15 @@
                 <li><a href="#" class="dropdown__link">Umroh Hemat</a></li>
                 <li><a href="#" class="dropdown__link">Umroh Reguler</a></li>
                 <li><a href="#" class="dropdown__link">Umroh Premium</a></li>
-                <li><a href="#" class="dropdown__link">Umroh Reguler</a></li>
+                <li>
+                  <a href="exclusive.html" class="dropdown__link"
+                    >Umroh Exclusive</a
+                  >
+                </li>
               </ul>
             </li>
             <li><a href="#tentang">Tentang Kami</a></li>
+
             <li class="dropdown__item">
               <div class="nav__item">
                 <a href="#lainnya"
@@ -92,7 +107,9 @@
                 <ul class="dropdown__menu">
                   <li><a href="" class="dropdown__link">Artikel</a></li>
                   <li>
-                    <a href="" class="dropdown__link">Tata Cara Pembayaran</a>
+                    <a href="pembayaran.html" class="dropdown__link"
+                      >Tata Cara Pembayaran</a
+                    >
                   </li>
                   <li>
                     <a href="" class="dropdown__link">Syarat & Ketentuan</a>
@@ -101,6 +118,7 @@
                 </ul>
               </div>
             </li>
+            <li><a href="#tentang">Login</a></li>
           </ul>
         </div>
 
@@ -112,8 +130,11 @@
         </div>
       </nav>
     </header>
+    <!-- header end -->
+
     <div id="overlay"></div>
-    <!-- section 1 / hero -->
+
+    <!-- hero section start -->
     <section class="hero__container" id="beranda">
       <div class="hero__content">
         <h1>Travel Umroh Terbaik dan Terpercaya Askadigi<span>Tour </span></h1>
@@ -123,6 +144,7 @@
         </p>
       </div>
     </section>
+    <!-- hero section end -->
 
     <!-- section 2 -->
     <section class="paket__container" id="paket">
@@ -178,7 +200,8 @@
               </div>
               <div class="item__card">
                 <p>
-                  <span class="material-symbols-outlined"> timer </span>9 Hari
+                  <span class="material-symbols-outlined"> avg_pace </span>10
+                  Hari
                 </p>
               </div>
               <div class="item__card">
@@ -236,7 +259,8 @@
               </div>
               <div class="item__card">
                 <p>
-                  <span class="material-symbols-outlined"> timer </span>9 Hari
+                  <span class="material-symbols-outlined"> avg_pace </span>10
+                  Hari
                 </p>
               </div>
               <div class="item__card">
@@ -295,7 +319,8 @@
               </div>
               <div class="item__card">
                 <p>
-                  <span class="material-symbols-outlined"> timer </span>12 Hari
+                  <span class="material-symbols-outlined"> avg_pace </span>13
+                  Hari
                 </p>
                 <p>City Tour Thaif</p>
               </div>
@@ -356,7 +381,8 @@
               </div>
               <div class="item__card">
                 <p>
-                  <span class="material-symbols-outlined"> timer </span>14 Hari
+                  <span class="material-symbols-outlined"> avg_pace </span>15
+                  Hari
                 </p>
                 <p>City Tour Thaif, Kereta Cepat</p>
               </div>
@@ -366,7 +392,7 @@
               </div>
               <div class="price__box">
                 <h4>Rp. 45 Juta</h4>
-                <a href="">Detail Paket</a>
+                <a href="exclusive.html">Detail Paket</a>
               </div>
             </div>
           </div>
@@ -644,12 +670,16 @@
         <div class="item item6"><img src="assets/STA-logo.png" alt="" /></div>
         <div class="item item7"><img src="assets/iqra-logo.png" alt="" /></div>
         <div class="item item8"><img src="assets/kan-logo.png" alt="" /></div>
-        <div class="item item9"><img src="assets/saudia.png" alt="" /></div>
-        <div class="item item10"><img src="assets/garuda.png" alt="" /></div>
+        <div class="item item9">
+          <img src="assets/saudia-logo-big.png" alt="" />
+        </div>
+        <div class="item item10">
+          <img src="assets/garuda-air.png" alt="" />
+        </div>
       </div>
     </section>
 
-    <!-- section 8 -->
+    <!-- footer section start -->
     <section class="info__container">
       <div class="info__card">
         <div class="info__box">
@@ -722,6 +752,7 @@
         </div>
       </footer>
     </section>
+    <!-- footer section end -->
     <script src="js/script.js"></script>
   </body>
 </html>

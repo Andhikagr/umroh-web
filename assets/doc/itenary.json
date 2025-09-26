@@ -1,0 +1,33 @@
+[
+  {
+    "hari": 1,
+    "judul": "Keberangkatan dari Jakarta menuju Madinah",
+    "kegiatan": [
+      "Berkumpul di Bandara Soekarno-Hatta, Jakarta.",
+      "Penerbangan menuju Madinah.",
+      "Setibanya di Madinah, dijemput dan diantar ke hotel untuk check-in.",
+      "Istirahat dan persiapan ibadah di Masjid Nabawi."
+    ]
+  },
+
+  {
+    "hari": 2,
+    "judul": "Ibadah dan Ziarah di Madinah",
+    "kegiatan": [
+      "Shalat Subuh berjamaah di Masjid Nabawi.",
+      "Ziarah ke Raudhah (jika memungkinkan)",
+      "Mengunjungi Masjid Quba dan Masjid Qiblatain.",
+      "Free time untuk shalat, tadarus Al-Qur’an, dan dzikir."
+    ]
+  },
+  {
+    "hari": 3,
+    "judul": "Wisata Sejarah Madinah",
+    "kegiatan": [
+      "Mengunjungi Jabal Uhud, lokasi bersejarah pertempuran Uhud.",
+      "Berkunjung ke Museum Madinah.",
+      "Menikmati suasana pasar lokal untuk belanja oleh-oleh.",
+      "Shalat di Masjid Nabawi dan istirahat di hotel."
+    ]
+  }
+]

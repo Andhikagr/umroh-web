@@ -1,0 +1,73 @@
+:root {
+  --primary--color: #f7a400;
+  --primary--second--color: #c38200;
+  --secondary--color: rgb(20, 23, 108);
+  --secondary--bg: rgb(11, 16, 97);
+  --text--light: rgb(242, 248, 255);
+  --text--medium: #c0c1df;
+  --text--soft: #dfe7ff;
+  --theme--secondary: #dd3333;
+  --bg: #fff;
+  --bg-thin: #eff0ff;
+  --dark--color: rgb(4, 6, 70);
+  --text-second-soft: rgb(65, 82, 139);
+  --text-netral: rgb(61, 61, 61);
+  --text-netral-soft: rgb(243, 243, 243);
+  --text-netral-medium: rgb(228, 228, 228);
+}
+
+* {
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  color: var(--secondary--color);
+}
+
+/* font */
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+/* H2 – Subheading */
+h2 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+/* H3 – Sub-subheading */
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+/* H4 – Minor heading */
+h4 {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+}
+/* H5 – Small heading */
+h5 {
+  font-size: clamp(1.1rem, 2vw, 1.25rem);
+}
+
+/* H6 – Tiny heading / caption */
+h6 {
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+}
+
+/* Paragraph / body text */
+p {
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+}
+a {
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+}
+
+.logo span {
+  color: var(--primary--color);
+}

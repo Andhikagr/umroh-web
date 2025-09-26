@@ -1,0 +1,85 @@
+/* section 5 */
+.testimoni__container {
+  padding: 4rem 7% 2rem;
+  background-color: rgb(255, 252, 239);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.testimoni__container h3,
+.testimoni__container p {
+  font-family: "Inter";
+}
+
+.testimoni__container p {
+  font-weight: 500;
+  text-align: center;
+}
+
+.testimoni__caraousel {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: mandatory;
+  padding: 1.5rem 0.5rem;
+  cursor: pointer;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+.testimoni__card {
+  flex: 0 0 calc(25% - 1.5rem);
+  scroll-snap-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.testimoni__card img {
+  width: 100%;
+  height: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+  display: block;
+  object-fit: contain;
+}
+
+.testimoni__caraousel::-webkit-scrollbar {
+  display: none;
+}
+
+.testimoni__caraousel.dragging .testimoni__card {
+  cursor: pointer;
+  user-select: none;
+}
+
+.testimoni__caraousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.testimoni__caraousel.no-transition {
+  scroll-behavior: auto;
+}
+
+/* mediaqueries section 5 */
+
+@media (max-width: 1250px) {
+  .testimoni__card {
+    flex: 0 0 calc(33.33% - 1.5rem);
+  }
+}
+@media (max-width: 815px) {
+  .testimoni__card {
+    flex: 0 0 calc(50% - 1.5rem);
+  }
+}
+@media (max-width: 540px) {
+  .testimoni__card {
+    flex: 0 0 100%;
+  }
+}
