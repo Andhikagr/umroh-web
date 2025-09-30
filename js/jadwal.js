@@ -37,15 +37,25 @@ const btnShowExtra = document.querySelectorAll(".detail__extra");
 const boxContent = document.querySelectorAll(".jadwal__extra__box");
 
 btnShowExtra.forEach((btn, index) => {
+  const textLabel = btn.querySelector(".text__label");
+
   btn.addEventListener("click", () => {
     boxContent[index].classList.toggle("active");
+
+    if (boxContent[index].classList.contains("active")) {
+      textLabel.textContent = "Sembunyikan Detail";
+    } else {
+      textLabel.textContent = "Tampilkan Detail";
+    }
   });
 });
 
 document.addEventListener("click", function (e) {
   btnShowExtra.forEach((btn, index) => {
+    const textLabel = btn.querySelector(".text__Label");
     if (!btn.contains(e.target) && !boxContent.contains(e.target)) {
       boxContent[index].classList.remove("active");
+      textLabel.textContent = "Tampilkan Detail";
     }
   });
 });
